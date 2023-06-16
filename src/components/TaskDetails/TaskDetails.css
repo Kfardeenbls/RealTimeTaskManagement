@@ -1,0 +1,48 @@
+/* styles.css */
+
+.task-details {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.task-details:hover {
+  transform: scale(1.02);
+}
+
+.task-details .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.task-details .description {
+  margin-bottom: 10px;
+}
+
+.task-details .actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.task-details .actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ff00ff; /* Change to the desired button color */
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.task-details .actions button:hover {
+  background-color: #9900cc; /* Change to the desired hover button color */
+}
+
+.task-details .actions button:first-child {
+  margin-right: 10px;
+}

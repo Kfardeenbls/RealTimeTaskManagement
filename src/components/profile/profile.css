@@ -1,0 +1,29 @@
+.floating-component {
+  position: fixed;
+  top: 20%;
+  right: 0.01em;
+  transform: translateY(-50%);
+  width: 100px;
+  background-color: #eaeaea;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: width 0.3s;
+}
+
+.floating-component.open {
+  width: 300px;
+}
+
+.trigger-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.content {
+  padding: 20px;
+}

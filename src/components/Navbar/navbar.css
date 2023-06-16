@@ -1,0 +1,98 @@
+/* styles.css */
+* {
+  margin: 0;
+}
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 10px 10px 10px;
+  height: 3rem;
+}
+.left-element {
+  width: 60%;
+}
+.Right-element {
+  float: right;
+  margin-top: -3rem;
+}
+
+.navbar .left-element ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  height: 3rem;
+}
+.Right-element ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  height: 3rem;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #ff00ff; /* Change to the desired hover color */
+}
+
+.navbar a {
+  position: relative;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ff00ff; /* Change to the desired animation color */
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+}
+
+/* * {
+  margin: 0;
+}
+.profile {
+  grid-area: profile;
+}
+.task_List {
+  grid-area: task_List;
+}
+.create_Task {
+  grid-area: create_Task;
+}
+.sign_Up {
+  grid-area: sign_Up;
+}
+.log_In {
+  grid-area: log_In;
+}
+
+.grid-container {
+  display: grid;
+  height: 6vh;
+  grid-template-areas: "profile task_List create_Task sign_Up log_In";
+  gap: 10px;
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(93, 161, 221);
+}
+.grid-container > div {
+  background-color: chartreuse;
+  padding: 10px 0;
+}
+.grid-container > div > a {
+  text-decoration: none;
+} */
